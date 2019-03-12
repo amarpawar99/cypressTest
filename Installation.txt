@@ -1,0 +1,37 @@
+Steps to configure local machine:
+1. Create a directory: e.g. test
+
+2. Open cmd or git bash and hit following command:
+
+    user/F/test $ npm install cypress --save-dev
+
+    > cypress@3.1.5 postinstall f:\test\node_modules\cypress
+    > node index.js --exec install
+
+    Installing Cypress (version: 3.1.5)
+
+    v  Downloaded Cypress
+    v  Unzipped Cypress
+    v  Finished Installation C:\Users\amarp\AppData\Local\Cypress\Cache\3.1.5
+
+    You can now open Cypress by running: node_modules\.bin\cypress open
+
+    https://on.cypress.io/installing-cypress
+
+    npm notice created a lockfile as package-lock.json. You should commit this file.
+
+    npm WARN enoent ENOENT: no such file or directory, open 'f:\test\package.json'
+    npm WARN test No description
+    npm WARN test No repository field.
+    npm WARN test No README data
+    npm WARN test No license field.
+
+    + cypress@3.1.5
+    added 197 packages in 391.56s
+
+3. To locate elements using xpath:
+    Go to file 'test\cypress\support' and add following command:
+    require('cypress-xpath')
+
+4. Open Cypress by running following command:
+    user/F/test $ ./node_modules/.bin/cypress open
