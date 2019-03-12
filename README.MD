@@ -20,8 +20,8 @@ To run the test cases locally:
     ./node_modules/.bin/cypress open
 
 Locate Integration Tests:
-    - forgotPassword.spec.js
-    - login.spec.js
-    - resendUnlockInstructions.spec.js
+- forgotPassword.spec.js
+- login.spec.js
+- resendUnlockInstructions.spec.js
 
     Click on 'Run all specs' button
